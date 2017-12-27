@@ -7,7 +7,7 @@ Micro Service Architecture는 기능 별로 Application을 구현하고 각 Appl
 
 이렇게 3개의 Application은 각각의 주소를 갖고 있고 각각 필요에 의해 API와 통신하여 웹페이지에 정보를 구현하게 할 계획이다.
 
-!['전체 Architecture'](../img/architecture.PNG)[PaaS](https://cloudfoundry.org)와 같은 플렛폼에서 Application을 올리게 되면 각각 독립적으로 구동되겠지만 IaaS나 Legacy환경에서는 각각의 서버에 올리거나 혹은 VM을 각각 생성시켜 구동 할 수도 있겠다.
+!['전체 Architecture'](../img/architecture.png)[PaaS](https://cloudfoundry.org)와 같은 플렛폼에서 Application을 올리게 되면 각각 독립적으로 구동되겠지만 IaaS나 Legacy환경에서는 각각의 서버에 올리거나 혹은 VM을 각각 생성시켜 구동 할 수도 있겠다.
 
 하지만 테스트 환경으로 구축하는것이므로 웹서비스를 위한 리소스적 비용이 많이드니 **한개의 서버에서 port로 주소를 분리** 하겠다.(물론 한개의 서버에 여러 서비스가 동작하게되므로 서버가 죽었을때 Microservice의 이점이 사라지는건 사실이나 어디까지나 구현이 목적이므로... 이부분은 skip한다.)
 
@@ -15,7 +15,7 @@ Micro Service Architecture는 기능 별로 Application을 구현하고 각 Appl
 
 각각의 Application은 Session정보를 Redis를 이용하여 저장하도록 겠다. 아래와 같은 구조를 갖게 될 것이다.
 
-<img src='../img/msa.PNG' width='300px'></img>
+<img src='../img/msa.png' width='300px'></img>
 
 ### 1. Ubuntu 14.04 LTS에 JDK1.8설치
 
