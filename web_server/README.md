@@ -43,7 +43,9 @@ $ sudo apt-get update
 $ sudo apt-get install oracle-java8-installer
 ```
 
-설치 완료!!! !['java version'](../img/javav.png)
+설치 완료!!!
+
+!['java version'](../img/javav.png)
 
 ---
 
